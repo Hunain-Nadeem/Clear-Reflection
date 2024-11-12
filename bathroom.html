@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Clear Reflection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Owl Car -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src=" https://colorlib.com/polygon/adminator/index.html"></script>
+<style>
+   *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: #f2f2f2;
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .heading h1{
+        font-size: 50px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .heading h1::after{
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color:rgba(145, 107, 36, 0.718);
+    }
+    .heading p{
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 35px;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about-image{
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .about-image img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .about-image:hover img{
+        transform: scale(1.2);
+    }
+    .about-content{
+        flex: 1;
+    }
+    .about-content h2{
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: #333;    
+    }
+    .about-content p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+    }
+    .about-content .read-more{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #af904c;
+        color: #fff;
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 5px;
+        transition: 0.3s ease;
+    }
+    .about-content .read-more:hover{
+        background-color: rgba(61, 43, 8, 0.718);
+    }
+    .read-more
+    {
+      background-color:rgba(145, 107, 36, 0.718) ;
+      color: #f2f2f2;
+    }
+    @media  screen and (max-width: 768px) {
+        .heading{
+            padding: 0px 20px;
+        }
+        .heading h1{
+            font-size: 36px;
+        }
+        .heading p{
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+        .container{
+            padding: 0px;
+        }
+        .about{
+            padding: 20px;
+            flex-direction: column;
+        }
+        .about img{
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        .about-content p{
+            padding: 0px;
+            font-size: 16px;
+        }
+        .about-content .read-more{
+            font-size: 16px;
+        }  
+    }
+    /* our team */
+    /* @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+
+ */
+
+  /* contact css */
+  
+/* footer for aboutus page css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+  
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #090a0c;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #af904c;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa ;
+}
+
+.first_col {
+    background-color: white;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    width: 550px;
+    left: 155px;
+    top: 171px;
+    border-radius: 20px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.row-last {
+    width: 60% !important;
+    position: relative !important;
+    left: 350px;
+    top: 50px;
+    height: 200px;
+    padding-bottom: 100px !important;
+    background-color: #c1b688;
+    border-radius: 20px;
+
+}
+.form-control {
+    height: 52px;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #c1b688;
+}
+.form-control[type=text]:focus {
+border: 2px solid #555;
+}
+.btn-primary {
+    background-color: #c1b688;
+    border: #c1b688;
+}
+
+.btn-primary:hover {
+    background-color: #e1d8b8 !important; 
+}
+
+.btn-primary:active {
+    background-color: #e1d8b8 !important; 
+    box-shadow: none; 
+}
+@media only screen and (max-width: 600px) {
+    .first_col {
+        position: initial;
+        left: 0 !important;
+    }
+
+    .sec_col {
+        order: 1 !important;
+    }
+
+    .row-last {
+        left: 0 !important;
+        width: 100% !important;
+        height: 500px !important;
+        top: 0 !important;
+    }
+}
+.modalbutton
+  {
+    background-color: rgba(145, 107, 36, 0.718);
+    color: #fffdfd;
+  }
+
+  .modalbutton:hover
+  {
+    background-color: rgba(212, 177, 111, 0.718);
+    color: #fffcfc;
+  }
+
+  .modalbutton1
+  {
+    background-color: rgba(54, 37, 4, 0.718);
+    color: #ffffff;
+  }
+
+  .modalbutton1:hover
+  {
+    background-color: rgba(212, 177, 111, 0.718);
+    color: #fffcfc;
+  }
+  
+</style>
+</head>
+<body>
+  
+  <!-- Owl Carousel -->
+  <header>
+    <a href="gallery.html" style="cursor: pointer;user-select: none;position: relative;" class="logo-container text-white"><span class="logo-p">C</span><span class="logo-p3">LEAR</span><br> <span class="logo-p1">R</span><span class="logo-p2">eflection</span></a>
+    <nav>
+        <div class="navbar">
+            <button class="dropdown btn text-white" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <label class="hamburger">
+                    <!-- <input type="checkbox"> -->
+                    <svg viewBox="0 0 32 32">
+                      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                      <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                  </label> MENU
+                </button>
+              <div class="nav-dropdown" id="navbarNavAltMarkup">
+                <div class="dropdown-menu">
+                  <ul class="dropdown-item list-unstyled category" href="#">
+                    <span class="category-name">Home</span>
+                        <a href="#Catogries"><li class="cat-item"> Categories</li></a>
+                        <a href="#FeaturedSection"><li class="cat-item">Featured</li></a>
+                        <a href="#Testimonials"><li class="cat-item">Overview</li></a>
+                  </ul>
+                  <ul class="dropdown-item list-unstyled category" href="#">
+                    <span class="category-name">Products</span>
+                        <a href="bathroom.html"><li class="cat-item">Bedroom mirrors</li></a>
+                        <a href="dressing.html"><li class="cat-item">Dressingroom mirrors</li></a>
+                        <a href="bathroom.html"><li class="cat-item">Bathroom mirrors</li></a>
+                        <a href="drawing.html"><li class="cat-item">Drawingroom mirrors</li></a>
+
+                  </ul>
+                  <ul class="dropdown-item list-unstyled category" href="#">
+                    <span class="category-name">Site Links</span>
+                        <a href="ABOUT US.html"><li class="cat-item">About Us</li></a>
+                        <a href="contactus.html"><li class="cat-item">Contact us</li></a>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </nav>
+    <div class="buttons">
+        <span class="account">
+            <a class="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"  class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+            </a>
+            <ul class="dropdown-menu mt-4">
+              <li><a class="dropdown-item" href="register.html">Register</a></li>
+              <li><a class="dropdown-item" href="login.html">Log in</a></li>
+            </ul>        </span>
+        <span id="cart" class="mx-3 my-2">
+            <span id="filter" data-bs-toggle="offcanvas" data-bs-target="#orderCart">
+                <!-- <img class="cart-streaks" src="img/menu.png" width="19" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </svg>
+            </span>
+        </span>
+    </div>
+  </header> 
+
+
+            <br><br><br><br><br>
+<!-- Main content -->
+<main class="mt-2">
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="bathroom main.jfif" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="heading">B A T H R O O M</h1>
+            <p class="description">Bathroom mirrors are more than just reflective surfaces; they are pivotal elements of bathroom decor and functionality. A well-placed mirror can make a small bathroom appear larger, while a decorative mirror can add a touch of elegance and sophistication. In addition to their functional benefits, bathroom mirrors can also enhance the overall look of your bathroom. Mirrors come in varied shapes, sizes, finishes, and styles that contribute to your room's design and can reflect your personal taste. Modern bathroom mirrors often come with advanced features, such as backlights, front lights, shaving sockets, storage, Bluetooth connection, built-in speakers, and touch/wave switches. These features can enhance the functionality and style of your bathroom, making it a more comfortable and convenient space.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath1.jpg" alt="" class="img-fluid"> <br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal1">Order now</button>              
+
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath2.jpg" alt="" class="img-fluid"><br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal2">Order now</button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath3.jpg" alt="" class="img-fluid"><br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal3">Order now</button>            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath4.jpg" alt="" class="img-fluid"><br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal4">Order now</button>            </div>
+          </div>
+        </div>
+<br>
+
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath5.jpg" alt="" class="img-fluid"> <br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal5">Order now</button>              
+
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath6.jpg" alt="" class="img-fluid"><br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal6">Order now</button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath7.jpg" alt="" class="img-fluid"><br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal7">Order now</button>            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="bath8.jpg" alt="" class="img-fluid"><br>
+              <button class="btn" style="background-color:  rgba(145, 107, 36, 0.718); color: white;"  data-bs-toggle="modal" data-bs-target="#myModal8">Order now</button>            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+    </div>         
+  </div>
+</div>
+
+<div class="modal" id="myModal1">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath1.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/" class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal2">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath2.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/" class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal3">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath3.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/"class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal4">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath4.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/"class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal" id="myModal5">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath5.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/" class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal6">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath6.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/" class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal7">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath7.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/"class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal8">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Bathroom Mirrors</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+     
+       <div class="modal-body"> 
+          <div class="row">
+          <div class="col-6"><img src="bath8.jpg" width="200px" height="200px"></div>
+          <div class="col-6">Elevate Your Bathroom Experience with the Perfect Mirror Transform your bathroom into a serene oasis with a mirror that reflects your personal style. From sleek and modern to traditional and ornate, our bathroom mirrors come in a variety of styles and sizes to suit your unique taste and space.</div>
+          <a href="https://iwc.com.pk/product-category/watches/brands/tag-heuer/"class="btn modalbutton">Shop</a>
+          </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"  class="btn modalbutton1" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+ 
+  <!-- contact form -->
+
+<!-- footer for about us page -->
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Company</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">Home</a></li>
+  	 				<li><a href="index.html">Products</a></li>
+  	 				<li><a href="ABOUT US.html">About Us</a></li>
+  	 				<li><a href="contactus.html">Contact us</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="contactus.html">Contact Us</a></li>
+  	 				<li><a href="#">FAQ'S</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Products</h4>
+  	 			<ul>
+  	 				<li><a href="bedroom.html">Bedroom Mirrors</a></li>
+  	 				<li><a href="dressing.html">Dressingroom Mirrors</a></li>
+  	 				<li><a href="bathroom.html">Bathroom Mirrors</a></li>
+  	 				<li><a href="drawing.html">Drawingroom Mirrors</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" ></i></a>
+  	 				<a href="https://pk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+</body>
+</html>
+
+     <!-- Testimonials -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/Word.js"></script>
+    <script src="JS/header.js"></script>
+    <script src="JS/app.js"></script>
+
+  </body>
+</html>
